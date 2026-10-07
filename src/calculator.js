@@ -14,4 +14,12 @@ function multiply(a, b) {
     return a * b;
 }
 
-module.exports = { sum, divide, multiply };
+function getUserInfo(name, age) {
+    return {
+        name,
+        age,
+        isAdult: age >= 18
+    };
+}
+
+module.exports = { sum, divide, multiply, getUserInfo };
