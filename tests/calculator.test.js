@@ -1,4 +1,4 @@
-const { sum, divide, multiply, getUserInfo} = require('../src/calculator');
+const { sum, divide, multiply, getUserInfo, isEven } = require('../src/calculator');
 
 describe('Calculator', () => {
     test('Sum works correctly', () => {
@@ -20,6 +20,12 @@ describe('Calculator', () => {
         expect(divide(10, 1)).toBe(10);
         expect(divide(10, 10)).toBe(1);
         expect(divide(10, 100)).toBe(0.1);
+    });
+    test('isEvent works correctly', () => {
+        expect(isEven(0)).toBe(true);
+        expect(isEven(1)).toBe(false);
+        expect(isEven(2)).toBe(true);
+        expect(isEven(3)).toBe(false);
     });
 });
 

@@ -14,6 +14,10 @@ function multiply(a, b) {
     return a * b;
 }
 
+function isEven(value) {
+    return value % 2 === 0;
+}
+
 function getUserInfo(name, age) {
     return {
         name,
@@ -22,4 +26,4 @@ function getUserInfo(name, age) {
     };
 }
 
-module.exports = { sum, divide, multiply, getUserInfo };
+module.exports = { sum, divide, multiply, getUserInfo, isEven };
