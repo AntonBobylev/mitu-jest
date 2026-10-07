@@ -1,21 +1,15 @@
 {
     "name": "mitu-jest",
     "version": "1.0.0",
-    "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AntonBobylev/mitu-jest.git"
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "keywords": [],
-    "author": "",
     "license": "ISC",
-    "type": "commonjs",
-    "bugs": {
-        "url": "https://github.com/AntonBobylev/mitu-jest/issues"
-    },
-    "homepage": "https://github.com/AntonBobylev/mitu-jest#readme"
+    "description": "",
+    "devDependencies": {
+        "jest": "^30.5.2"
+    }
 }
