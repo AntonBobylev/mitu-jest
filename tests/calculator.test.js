@@ -14,6 +14,12 @@ describe('Calculator', () => {
     test('Division by zero throws an exception', () => {
         expect(() => divide(10, 0)).toThrow('Cannot divide by zero');
     });
+    test('Division works correctly', () => {
+        expect(divide(0, 10)).toBe(0);
+        expect(divide(10, 1)).toBe(10);
+        expect(divide(10, 10)).toBe(1);
+        expect(divide(10, 100)).toBe(0.1);
+    });
 });
 
 describe('User Info', () => {
