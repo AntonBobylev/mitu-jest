@@ -18,12 +18,4 @@ function isEven(value) {
     return value % 2 === 0;
 }
 
-function getUserInfo(name, age) {
-    return {
-        name,
-        age,
-        isAdult: age >= 18
-    };
-}
-
-module.exports = { sum, divide, multiply, getUserInfo, isEven };
+module.exports = { sum, divide, multiply, isEven };

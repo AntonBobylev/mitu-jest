@@ -1,4 +1,4 @@
-const { sum, divide, multiply, getUserInfo, isEven } = require('../src/calculator');
+const { sum, divide, multiply, isEven } = require('../src/calculator');
 
 describe('Calculator', () => {
     test('Sum works correctly', () => {
@@ -27,20 +27,4 @@ describe('Calculator', () => {
         expect(isEven(2)).toBe(true);
         expect(isEven(3)).toBe(false);
     });
-});
-
-describe('User Info', () => {
-    test('getUserInfo returns correct object', () => {
-        expect(getUserInfo('Alexey', 25)).toEqual({
-            name: 'Alexey',
-            age: 25,
-            isAdult: true
-        })
-    });
-
-    test('Object contains specified properties', () => {
-        const userInfo = getUserInfo('Mary', 16);
-        expect(userInfo).toHaveProperty('name');
-        expect(userInfo).toHaveProperty('isAdult', false);
-    })
 });
