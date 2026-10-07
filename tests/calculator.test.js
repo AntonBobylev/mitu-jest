@@ -21,7 +21,7 @@ describe('Calculator', () => {
         expect(divide(10, 10)).toBe(1);
         expect(divide(10, 100)).toBe(0.1);
     });
-    test('isEvent works correctly', () => {
+    test('isEven works correctly', () => {
         expect(isEven(0)).toBe(true);
         expect(isEven(1)).toBe(false);
         expect(isEven(2)).toBe(true);
